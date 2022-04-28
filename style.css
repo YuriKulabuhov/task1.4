@@ -45,7 +45,7 @@ body {
 .header__logo {
   flex-grow: 1;
 }
-.logo__icon {
+.header__logo-icon {
   max-width: 97px;
   max-height: 51px;
 }
