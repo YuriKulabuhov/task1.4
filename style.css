@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("/fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+}
+body {
+  font-size: 16px;
+  color: black;
+  font-family: "TT Lakes";
+  margin: 0;
+  background-color: #f2f2f2;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  margin-left: 24px;
+}
+.header__menu-burger {
+  margin-right: 16px;
+}
+.header__menu-burger::before {
+  content: "";
+  display: block;
+  background-image: url("img/burger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+.header__menu-burger:hover::before {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 0.5;
+}
+.header__logo {
+  flex-grow: 1;
+}
+.logo__icon {
+  max-width: 97px;
+  max-height: 51px;
+}
+.header__menu-search {
+  margin-right: 24px;
+}
+.header__menu-search::before {
+  content: "";
+  display: block;
+  background-image: url("img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+}
+.header__menu-search:hover::before {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 0.5;
+}
+.main {
+  padding: 30px 0px 100px 0px;
+  font-size: 16px;
+  flex-grow: 1;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.menu__button {
+  margin: 24px 0px 32px 24px;
+}
+.menu__button:first-of-type {
+  color: #7e7e82;
+}
+.menu__button:first-of-type::before {
+  content: "";
+  border-left: 4px solid #41f6d7;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  height: 32px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+}
+.footer__icon-call::before {
+  content: "";
+  display: block;
+  background-image: url("img/call.svg");
+  width: 40px;
+  height: 40px;
+  margin: 0px 16px 0px 24px;
+}
+.footer__icon-call:hover::before {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 0.5;
+}
+.footer__icon-chat::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 60px;
+  background-image: url("img/chat.svg");
+  width: 40px;
+  height: 40px;
+  margin: 0px 16px;
+}
+.footer__icon-chat:hover::before {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 0.5;
+}
+.footer__icon-profile::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 112px;
+  background-image: url("img/profile.svg");
+  width: 40px;
+  height: 40px;
+  margin: 0px 16px;
+}
+.footer__icon-profile:hover::before {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 0.5;
+}
+.footer__mail {
+  display: inline-block;
+  margin: 16px 24px 12px 24px;
+  color: #1b1c21;
+  text-decoration: none;
+}
+.footer__mobile-number {
+  display: inline-block;
+  font-size: 24px;
+  margin: 0px 24px 40px 24px;
+}
+.footer__selector-language {
+  padding: 0px 16px 32px 24px;
+}
+.language {
+  text-decoration: none;
+  color: #1b1c21;
+}
+.value-ru {
+  color: #7e7e82;
+}
