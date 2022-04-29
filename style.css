@@ -71,18 +71,18 @@ body {
   font-size: 16px;
   flex-grow: 1;
 }
-.menu {
+.main__menu {
   list-style: none;
   padding: 0;
   position: relative;
 }
-.menu__button {
+.main__item {
   margin: 24px 0px 32px 24px;
 }
-.menu__button:first-of-type {
+.main__item:first-of-type {
   color: #7e7e82;
 }
-.menu__button:first-of-type::before {
+.main__item:first-of-type::before {
   content: "";
   border-left: 4px solid #41f6d7;
   position: absolute;
@@ -153,10 +153,10 @@ body {
 .footer__selector-language {
   padding: 0px 16px 32px 24px;
 }
-.language {
+.footer__language {
   text-decoration: none;
   color: #1b1c21;
 }
-.value-ru {
+.language-active {
   color: #7e7e82;
 }
